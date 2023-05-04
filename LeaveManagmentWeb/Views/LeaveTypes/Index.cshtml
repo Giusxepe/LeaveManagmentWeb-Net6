@@ -9,7 +9,7 @@
 <p>
     <a class="btn btn-primary" asp-action="Create"><i class="bi bi-plus-lg"></i> Create New</a>
 </p>
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -33,7 +33,7 @@
             </td>
            
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-dark"><i class="bi bi-pencil-square"></i></a> 
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="bi bi-pencil-square"></i></a> 
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success "><i class="bi bi-info-square"></i></a> 
                 
                 <button data-id="@item.Id" class="btn btn-danger deleteBtn" type="button"><i class="bi bi-trash"></i></button>
@@ -66,7 +66,7 @@
                                     var id = btn.data("id");
                                     $('#leaveTypeId').val(id);
                                     $('#deleteForm').submit();
-                                    swal("Register has been deleted","warning");
+                                    swal("Register has been deleted");
                                 }
                             });
                         })
