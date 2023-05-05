@@ -1,4 +1,5 @@
 ﻿using LeaveManagmentWeb.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -18,6 +19,7 @@ namespace LeaveManagmentWeb.Controllers
             return View();
         }
 
+       
         public IActionResult Privacy()
         {
             return View();
